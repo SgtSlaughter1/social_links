@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Inter;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  background-color: #111111;
+}
+.card {
+  background-color: #1a1a1a;
+  color: hsl(0, 0%, 100%);
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  width: 40%;
+  margin-top: 50px;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.card img {
+  border-radius: 90px;
+  height: 80px;
+  width: 80px;
+  margin-bottom: 20px;
+}
+
+.card h2 {
+  margin-bottom: 10px;
+  font-weight: 900;
+}
+
+.card p {
+  margin-bottom: 10px;
+  color: hsl(75, 94%, 57%);
+}
+
+.card .duty {
+  color: hsl(0, 0%, 100%);
+}
+
+/* Link Style */
+.card button {
+  text-decoration: none;
+  /* display: flex; */
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(0, 0%, 20%);
+  /* display: inline-block; */
+  margin: 10px 40px;
+  padding: 10px;
+  border-radius: 5px;
+  font-weight: 700;
+  width: 70%;
+  align-items: center;
+  justify-content: space-evenly;
+  border: none;
+  cursor: pointer;
+}
+
+a{
+  text-decoration: none;
+  color: white;
+}
+.card button i {
+  margin: 5px;
+  color: black;
+}
+
+button{
+  transition-duration: 0.4s;
+}
+
+/* Hover Effect */
+.card button:hover:not(.active) {
+  background-color: hsl(75, 94%, 57%);
+  color: black;
+}
+
+.card button:hover:not(.active) a{
+  color: black;
+}
+
+.card button:hover:not(.active) i{
+  color: white;
+}
+/* i:hover:not(.active){
+  color: white;
+} */
+
+/* Active State */
+button.active{
+  background-color: hsl(75, 94%, 57%);
+}
+
+@media screen and (min-width: 320px) and (max-width: 426px) {
+    .card {
+    width: 80%;
+    }
+  }
+  @media  (min-width: 768px) and (max-width: 1025px) {
+    .card {
+        width: 50%;
+        }
+        
+  }
+
